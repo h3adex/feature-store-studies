@@ -1,0 +1,23 @@
+
+C
+#
+__dummy"
+__dummy_idJStudentStore
+†Ëé—ÀÆÙ“†Ëé—ÀÆÙ“
+B
+"
+student"studentJStudentStore
+†Ëé— •ß“†Ëé— •ß“1"$5a5c0b9d-2dd5-4bf5-b487-182a7a3facf4*åê—Øïöö2ó
+˜
+student_semester_statsStudentStorestudent"
+semester"
+is_done2€£:¶event_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
+studentV
+ÒËé—ˆ„Óåê—°åâö
+öªä—¸Œš>õÍé—
+õÍé—€¹ƒ
+õÍé—€¹ƒR§
+¤
+,feast.infra.online_stores.sqlite.SqliteTable"t
+M/home/mauritz/PycharmProjects/feast-example/StudentStore/data/online_store.db#StudentStore_student_semester_statsbÅevent_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_sourceªStudentStorez4
+StudentStore$69340eea-6e8c-4c31-bfb5-c91c5bb2f872
