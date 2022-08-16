@@ -7,25 +7,22 @@ __dummy_idJStudentStore
 B
 "
 student"studentJStudentStore
-†Ëé— •ß“†Ëé— •ß“1"$fb671e58-2770-4545-8984-24d8c3cb7a3c*Ã¡ê—èİñ¯2ó
-˜
-student_semester_statsStudentStorestudent"
-semester"
-is_done2€£:¶event_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
-studentV
-ÒËé—ˆ„Óåê—°åâö
-öªä—¸Œš>õÍé—
-õÍé—€¹ƒ
-õÍé—€¹ƒ2£
+†Ëé— •ß“†Ëé— •ß“1"$da2f6daf-259b-46e5-953e-7ed67dd4376e*”ıî—€ìÁ…2£
 ‚
 student_creditsStudentStorestudent"
 credits2€£:µevent_timestamp*created_timestampZB@/home/mauritz/PycharmProjects/feast-example/data/credits.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
 student
-Ã¡ê—¨Õß¯Ã¡ê—¨Õß¯RÇ
+Ã¡ê—¨Õß¯Ã¡ê—¨Õß¯2»
+š
+student_semester_statsStudentStorestudent"
+semester"
+	graduated2€£:¶event_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
+student
+”ıî—ÀÛˆ…”ıî—ÀÛˆ…RÇ
 ¤
 ,feast.infra.online_stores.sqlite.SqliteTable"t
 M/home/mauritz/PycharmProjects/feast-example/StudentStore/data/online_store.db#StudentStore_student_semester_stats
 
 ,feast.infra.online_stores.sqlite.SqliteTable"m
-M/home/mauritz/PycharmProjects/feast-example/StudentStore/data/online_store.dbStudentStore_student_creditsbÄevent_timestamp*created_timestampZB@/home/mauritz/PycharmProjects/feast-example/data/credits.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_sourceªStudentStorez4
+M/home/mauritz/PycharmProjects/feast-example/StudentStore/data/online_store.dbStudentStore_student_creditsbÅevent_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_sourceªStudentStorez4
 StudentStore$69340eea-6e8c-4c31-bfb5-c91c5bb2f872

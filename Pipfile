@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 joblib = "*"
 sklearn = "*"
+feast = "*"
+jupyter = "*"
+numpy = "*"
 
 [dev-packages]
 

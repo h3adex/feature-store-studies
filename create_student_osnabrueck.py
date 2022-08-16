@@ -14,7 +14,7 @@ base_student: int = 822594
 students: List[int] = [base_student + x for x in range(100)]
 semester: List[int] = []
 farmed_credits: List[int] = []
-is_done: List[bool] = []
+graduated: List[bool] = []
 
 for x in students:
     if (x % 3) == 0:
@@ -30,9 +30,9 @@ for k, v in enumerate(semester):
 
 for k, v in enumerate(semester):
     if v >= 6 and farmed_credits[k] >= 90:
-        is_done.append(True)
+        graduated.append(True)
     else:
-        is_done.append(False)
+        graduated.append(False)
 
 semester_df: DataFrame = pd.DataFrame(
     {
@@ -40,7 +40,7 @@ semester_df: DataFrame = pd.DataFrame(
         "created_timestamp": [creation_date for _ in students],
         "student": students,
         "semester": semester,
-        "is_done": is_done
+        "graduated": graduated
     }
 )
 

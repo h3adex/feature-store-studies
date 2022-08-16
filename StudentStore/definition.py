@@ -22,7 +22,7 @@ student_semester_stats = FeatureView(
     ttl=timedelta(days=1),
     features=[
         Feature(name="semester", dtype=ValueType.DOUBLE),
-        Feature(name="is_done", dtype=ValueType.BOOL),
+        Feature(name="graduated", dtype=ValueType.BOOL),
     ],
     online=True,
     source=batch_source,
