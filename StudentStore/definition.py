@@ -12,7 +12,7 @@ batch_source = FileSource(
 )
 
 student = Entity(
-    name="student",
+    name="registration_number",
     value_type=ValueType.INT64
 )
 

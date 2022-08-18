@@ -9,6 +9,8 @@ sklearn = "*"
 feast = "*"
 jupyter = "*"
 numpy = "*"
+names = "*"
+pandas = "*"
 
 [dev-packages]
 

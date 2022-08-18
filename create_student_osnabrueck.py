@@ -4,20 +4,22 @@ from typing import List
 import pandas as pd
 from datetime import datetime, timedelta
 from pandas import DataFrame
+import names
 
 retrieval_date: datetime = datetime.utcnow().replace(tzinfo=None)
 retrieval_outside_max_age_date: datetime = retrieval_date + timedelta(1)
 event_date: datetime = retrieval_date - timedelta(2)
 creation_date: datetime = retrieval_date - timedelta(1)
 
-base_student: int = 822594
-students: List[int] = [base_student + x for x in range(100)]
+base_registration_number: int = 825594
+registration_numbers: List[int] = [base_registration_number + x for x in range(100)]
+student_names: List[str] = [names.get_full_name() for _ in registration_numbers]
 semester: List[int] = []
 farmed_credits: List[int] = []
 graduated: List[bool] = []
 
-for x in students:
-    if (x % 3) == 0:
+for x in registration_numbers:
+    if (x % 2) == 0:
         semester.append(random.randint(5, 9))
     else:
         semester.append(random.randint(1, 5))
@@ -36,9 +38,9 @@ for k, v in enumerate(semester):
 
 semester_df: DataFrame = pd.DataFrame(
     {
-        "event_timestamp": [event_date for _ in students],
-        "created_timestamp": [creation_date for _ in students],
-        "student": students,
+        "event_timestamp": [event_date for _ in registration_numbers],
+        "created_timestamp": [creation_date for _ in registration_numbers],
+        "registration_number": registration_numbers,
         "semester": semester,
         "graduated": graduated
     }
@@ -46,18 +48,21 @@ semester_df: DataFrame = pd.DataFrame(
 
 credits_df: DataFrame = pd.DataFrame(
     {
-        "event_timestamp": [event_date for _ in students],
-        "created_timestamp": [creation_date for _ in students],
-        "student": students,
+        "event_timestamp": [event_date for _ in registration_numbers],
+        "created_timestamp": [creation_date for _ in registration_numbers],
+        "registration_number": registration_numbers,
         "credits": farmed_credits,
     }
 )
 
+event_timestamps_1 = [retrieval_date - timedelta(1) for _ in registration_numbers]
+event_timestamps_2 = [retrieval_outside_max_age_date for _ in registration_numbers]
+
 students_df: DataFrame = pd.DataFrame(
     {
-        "event_timestamp": [retrieval_date - timedelta(1) for _ in students] +
-                           [retrieval_outside_max_age_date for _ in students],
-        "student": students + students,
+        "event_timestamp": event_timestamps_1 + event_timestamps_2,
+        "registration_number": registration_numbers + registration_numbers,
+        "student_name": student_names + student_names
     }
 )
 

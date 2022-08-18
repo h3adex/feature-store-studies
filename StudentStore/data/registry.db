@@ -4,21 +4,21 @@ C
 __dummy"
 __dummy_idJStudentStore
 †Ëé—ÀÆÙ“†Ëé—ÀÆÙ“
-B
-"
-student"studentJStudentStore
-†Ëé— •ß“†Ëé— •ß“1"$da2f6daf-259b-46e5-953e-7ed67dd4376e*”ıî—€ìÁ…2£
-‚
-student_creditsStudentStorestudent"
-credits2€£:µevent_timestamp*created_timestampZB@/home/mauritz/PycharmProjects/feast-example/data/credits.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
-student
-Ã¡ê—¨Õß¯Ã¡ê—¨Õß¯2»
-š
-student_semester_statsStudentStorestudent"
+Z
+:
+registration_number"registration_numberJStudentStore
+¶Øù—¸¼òÂ¶Øù—¸¼òÂ1"$af3ed95e-4180-4edc-a9cd-e0e8d40d806e*ÚØù—À†äÎ2Ó
+²
+student_semester_statsStudentStoreregistration_number"
 semester"
-	graduated2€£:¶event_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
-student
-”ıî—ÀÛˆ…”ıî—ÀÛˆ…RÇ
+	graduated2€£:¶event_timestamp*created_timestampZCA/home/mauritz/PycharmProjects/feast-example/data/semester.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
+registration_number
+¶Øù—˜ˆùÂ¶Øù—˜ˆùÂ2»
+š
+student_creditsStudentStoreregistration_number"
+credits2€£:µevent_timestamp*created_timestampZB@/home/mauritz/PycharmProjects/feast-example/data/credits.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢student_batch_source@b
+registration_number
+ÚØù—ÈÒ®ÎÚØù—ÈÒ®ÎRÇ
 ¤
 ,feast.infra.online_stores.sqlite.SqliteTable"t
 M/home/mauritz/PycharmProjects/feast-example/StudentStore/data/online_store.db#StudentStore_student_semester_stats

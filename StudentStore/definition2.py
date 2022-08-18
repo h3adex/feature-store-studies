@@ -12,13 +12,13 @@ batch_source = FileSource(
 )
 
 student = Entity(
-    name="student",
+    name="registration_number",
     value_type=ValueType.INT64
 )
 
 customer_events = FeatureView(
     name="student_credits",
-    entities=["student"],
+    entities=[student],
     ttl=timedelta(days=1),
     features=[
         Feature(name="credits", dtype=ValueType.INT64),
