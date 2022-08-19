@@ -26,12 +26,12 @@ for x in registration_numbers:
 
 for k, v in enumerate(semester):
     if v > 5:
-        farmed_credits.append(random.randint(70, 120))
+        farmed_credits.append(random.randint(170, 240))
     else:
-        farmed_credits.append(random.randint(0, 70))
+        farmed_credits.append(random.randint(0, 170))
 
 for k, v in enumerate(semester):
-    if v >= 6 and farmed_credits[k] >= 90:
+    if v >= 6 and farmed_credits[k] >= 180:
         graduated.append(True)
     else:
         graduated.append(False)
